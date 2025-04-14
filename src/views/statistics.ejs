@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .nav-link.active {
+      background-color: #0d6efd;
+      color: white !important;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <%- include('partials/navbar.ejs') %>
+   
+    <!-- Contenido principal ... acá decía container-fluid-->
+    <div class="container p-4">
+      <h4 class="text-center">📊 Estadísticas</h4>
+      <p class="text-center">Pronto se mostrarán aquí métricas y gráficos.</p>
+
+      <br/>
+      <div class="container text-center mt-4">
+        <button id="downloadCsv" class="btn btn-dark btn-sm">
+          <i class="bi bi-cloud-arrow-down-fill"></i>     Descargar Journal
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Cargar JavaScript de Statistics -->
+  <script src="/js/statistics.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

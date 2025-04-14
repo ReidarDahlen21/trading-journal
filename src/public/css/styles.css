@@ -1,0 +1,84 @@
+  /* Reducir el tamaño general */
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem; /* Reduce el tamaño de la tipografía base */
+  }
+
+  /* Reducir el tamaño del formulario */
+  form {
+    max-width: 80%; /* Ajusta el ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 10px; /* Reducir el padding interno */
+  }
+
+ #date-tree a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover */
+#date-tree a:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+  border-radius: 4px;
+}
+
+/* Estilo para los encabezados del colapsable */
+.collapsible-header {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para el contenido del colapsable */
+.collapsible-body {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+
+
+
+
+/* Diseño en dos columnas */
+.history-layout {
+  display: flex;
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Panel Izquierdo: Collapsible */
+.left-panel {
+  width: 50%; /* Ocupa el 50% del ancho */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel Derecho: Detalles */
+.right-panel {
+  width: 50%; /* Ocupa el otro 50% del ancho */
+  background-color: #fff;
+  padding: 20px;
+/*  border-left: 1px solid #ddd;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  */
+}
+
+/* Ajustes para el título */
+h4.center-align {
+  margin-bottom: 20px;
+}
+
+.btn-dark {
+  background-color: #343a40 !important;
+  color: white !important;
+  border: none !important;
+}

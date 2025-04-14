@@ -1,0 +1,25 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* Reducir tamaño de fuente y padding de la tabla */
+#journalTable {    
+    font-size: 12px;  /* Reduce el tamaño de la tipografía */
+    width: auto;  /* Hace que la tabla no ocupe todo el ancho */
+    text-align: left;  /* Alinea el texto a la izquierda */
+    margin-left: 0; /* Asegura que la tabla esté alineada a la izquierda */
+}
+
+/* Reducir padding de celdas */
+#journalTable th, 
+#journalTable td {
+    padding: 4px 8px; /* Reduce el padding interno de las celdas */
+}
+
+
+/* Alinear la tabla a la izquierda */
+.container {
+    padding-left: 30px; /* Mismo padding que la navbar */
+    margin-left: 0; /* Eliminar márgenes izquierdos */
+    max-width: 100%; /* Que ocupe todo el ancho disponible */
+}

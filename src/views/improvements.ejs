@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Improvements</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css" rel="stylesheet"> <!-- Estilos de Markdown -->
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .nav-link.active {
+      background-color: #0d6efd;
+      color: white !important;
+      border-radius: 5px;
+    }
+    .markdown-content {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <%- include('partials/navbar.ejs') %>
+
+    <!-- Contenido principal -->
+    <div class="container p-4">
+      <!-- Título dinámico con improvementsDescription -->
+      <h4 class="text-center"><%= improvementsDescription %></h4>
+      <hr>
+
+      <!-- Contenido renderizado de improvementsDetail en formato Markdown -->
+      <div class="markdown-content markdown-body">
+        <%- improvementsDetailHtml %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
